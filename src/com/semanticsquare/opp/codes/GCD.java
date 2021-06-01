@@ -11,18 +11,6 @@ public class GCD {
 		}
 		return res;
 	}
-
-	static int gcdd(int a, int b) {
-		int res = Math.min(a, b);
-		while (res > 0) {
-			if (a % res == 0 && b % res == 0) {
-				break;
-			}
-			res--;
-		}
-		return res;
-	}
-
 	// EULIDEAN ALGORITHM
 	static int gcdE(int a, int b) {
 		while (a != b) {

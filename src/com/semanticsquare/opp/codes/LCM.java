@@ -12,10 +12,13 @@ public class LCM {
 	static int lcm(int a, int b) {
 		return (a * b) / gcd(a, b);
 	}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(lcm(15, 20));
+		System.out.println(lcmd(15, 20));
 	}
 
 }

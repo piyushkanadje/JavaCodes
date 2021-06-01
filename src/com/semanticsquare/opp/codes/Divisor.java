@@ -10,9 +10,6 @@ public class Divisor {
 	}
 
 	// divisors alaways came in pairs not in sorted order
-
-	//
-
 	static void divisorsPair(int n) {
 		for (int i = 1; i * i <= n; i++) {
 			if (n % i == 0) {

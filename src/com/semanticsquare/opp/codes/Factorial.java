@@ -17,7 +17,7 @@ public class Factorial {
 		return n * recursiveFactorial(n - 1);
 
 	}
-
+	
 	static int recursive(int n) {
 		if (n == 1 || n == 0) {
 			return 1;
@@ -29,8 +29,8 @@ public class Factorial {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(trail(25));
-		System.out.println(recursiveFactorial(5));
+		System.out.println(trailling(25000));
+  	System.out.println(recursiveFactorial(5));
 	}
 
 }

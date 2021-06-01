@@ -2,7 +2,7 @@ package recursion;
 
 public class Number {
 
-	// n to 1 4 3 2 1
+	// n to 1 .. 4 3 2 1
 	static void printN(int n) {
 		if (n == 0)
 			return;
@@ -52,8 +52,10 @@ public class Number {
 		if (n == 1) {
 			return 1;
 		}
-		return sun(n - 1) + sun(n - 2);
+		return (n - 1) + sun(n - 2);
 	}
+
+	
 
 	// sum of n numbers
 	static int summ(int n) {
@@ -90,15 +92,13 @@ public class Number {
 
 	}
 
-	
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// printN(5);
 		// tailRecursive(5, 1);
 		// System.out.println(sumR(253));
 		String s = "aba";
-		
+
 	}
 
 }

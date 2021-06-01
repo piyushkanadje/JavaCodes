@@ -26,6 +26,8 @@ public class palindrome {
 		return (str.charAt(start) == str.charAt(end) && isPalindrome(str, start + 1, end - 1));
 
 	}
+	
+	
 
 //rope cutting
 //	static int ropeC(int n, int a, int b, int c) {

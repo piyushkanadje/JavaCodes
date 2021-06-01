@@ -1,11 +1,7 @@
 package com.semanticsquare.opp.codes;
-
-import java.util.Calendar;
-import java.util.Scanner;
-
 public class Palindrome {
 	// Reverse Of the number
-	static boolean palindrome(int n) {
+	static boolean palindromes(int n) {
 		int rev = 0;
 		int temp = n;
 		while (temp != 0) {
@@ -17,47 +13,33 @@ public class Palindrome {
 		return (rev == n);
 	}
 
-//	static boolean palindrom(int n) {
-//		int rev = 0;
-//		int temp = n;
-//		while (temp != 0) {
-//           int ld = temp % 10 ;
-//           rev  = rev  * 10 + ld;
-//            temp = temp /10;
-//           
-//		}
-//		return ( rev == n);
-//	}
-
-	static boolean palindromew(int n) {
-		int rev = 0;
-		int temp = 0;
-		while (temp != 0) {
-			int ld = temp % 10;
-			rev = rev * 10 + ld;
-			temp = temp / 10;
-
-		}
-		return(rev==n);
+	//String PAalimdrome
+	public static void rev(String str) {
+		String input =  str ;
+		StringBuilder input1 = new StringBuilder();
+		
+		
+		input1.append(input);
+		System.out.println(input1.reverse());
+		
+		System.out.println( input.equals( input1.reverse().toString()) ? "True" : "False"  );
+		
+	
 	}
+	
+	//Anagrams Of Strings
 
 	
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub4
-		// System.out.println(palindrome(121));
-		// System.out.println(palindrom(121));
-		// System.out.println(powo(5, 2));
-		System.out.println(palindromew(53));
 		
-		String S = "Lob";
-		int sr = S.length();
-		System.out.println(S.charAt(0));
 		
-//		Scanner sc = new Scanner(System.in);
-//		String S  = sc.nextLine();
-//		
+		String S = "madam";
+//		int sr = S.length();
+//		System.out.println(S.charAt(0));
+rev(S);
 		
+
 	}
 
 }

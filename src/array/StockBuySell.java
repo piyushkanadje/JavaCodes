@@ -33,7 +33,7 @@ public class StockBuySell {
 		return profit;
 	}
 	
-	static int profit(int[] a ){
+	static int profitf(int[] a ){
 		int n = a.length;
 		int profit = 0;
 		for(int i = 0;i < n ; i ++) {

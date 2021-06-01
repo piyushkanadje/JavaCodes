@@ -2,18 +2,7 @@ package recursion;
 
 public class StringSubset {
 	// power sets of a string
-	static void set(String s) {
-		int n = s.length();
-		int powerset = (int) Math.pow(2, n);
-		for (int counter = 0; counter < powerset; counter++) {
-			for (int j = 0; j < n; j++) {
-				if ((counter & (1 << j)) != 0) {
-					System.out.print(s.charAt(j));
-				}
-			}
-			System.out.println();
-		}
-	}
+	[]
 
 	// power sets using recursion
 
