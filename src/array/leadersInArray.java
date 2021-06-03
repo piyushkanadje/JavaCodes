@@ -34,7 +34,7 @@ public class leadersInArray {
 			}
 		}	
 	}
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] a = { 7, 10, 4, 10, 6, 5, 3 };

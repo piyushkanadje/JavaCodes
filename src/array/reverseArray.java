@@ -15,8 +15,18 @@ public class reverseArray {
 			low++;
 			high--;
 		}
-		System.out.println("Reversed Array  ");
-		for (int i = 0; i < a.length; i++) {
+	
+	}
+	
+	static void rev(int[] a) {
+		int res = 0 ; 
+		for(int i = a.length - 1; i < a.length ; i --) {
+			int temp = a[i];
+			a[i] = a[res];
+			a[res] = temp;
+			res ++ ;
+		}
+		for(int  i = 0; i < a.length ; i++) {
 			System.out.print(a[i] + " ");
 		}
 	}
@@ -63,7 +73,7 @@ public class reverseArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 20, 30, 5, 6, 8, 79, 12 };
-	
+		rev(arr);
 		
 
 	}

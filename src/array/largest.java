@@ -34,13 +34,15 @@ public class largest {
 	}
 
 	
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] arr = { 10, 20, 30, 50 ,90 };
-		System.out.println(checkIn(arr));
-		largests(arr);
+		int[] arr = { 1110, 210, 30, 50 ,90 };
+		//System.out.println(checkIn(arr));
+		largestq(arr);
 	}
 
 }

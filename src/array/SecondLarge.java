@@ -21,7 +21,7 @@ public class SecondLarge {
 				if (res == -1) {
 					res = i;
 				} else {
-					if (a[i] > a[res]) {
+					if (a[i] > a[res ]) {
 						res = i;
 					}
 				}
@@ -47,6 +47,9 @@ public class SecondLarge {
 		return a[res];
 	}
 
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] a = { 10, 12, 30 };
