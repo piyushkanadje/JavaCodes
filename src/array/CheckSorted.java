@@ -1,4 +1,4 @@
-package array;
+ackage array;
 
 public class CheckSorted {
 

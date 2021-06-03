@@ -8,7 +8,6 @@ public class Insert {
 			return n;
 
 		int idx = pos - 1;
-
 		for (int i = n - 1; i >= idx; i--) {
 			arr[i + 1] = arr[i];
 		}
@@ -24,31 +23,17 @@ public class Insert {
 
 	}
 
-	static int insertt(int[] a, int cap, int pos, int ele, int n) {
-
-		int index = pos - 1;
-		if (n == cap) {
-			return n;
-		}
-		for (int i = n - 1; i >= index; i--) {
-			a[i + 1] = a[i];
-		}
-		a[index] = ele;
-		return n + 1;
-
-	}
-
-	//
-
+	
 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = new int[5], cap = 5, n = 3;
 		// ArrayList<Integer> al = new ArrayList<Integer>(cap);
-		System.out.println(insertt(arr, cap, 2, 23, n));
 		arr[0] = 5;
-         
+	   System.out.println(insert(arr,n,2,cap,1));
+		
+
 //		al.add(20);
 //		al.add(23);
 //		al.add(65);
