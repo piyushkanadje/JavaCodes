@@ -32,17 +32,7 @@ public class StockBuySell {
 		}
 		return profit;
 	}
-	
-	static int profitf(int[] a ){
-		int n = a.length;
-		int profit = 0;
-		for(int i = 0;i < n ; i ++) {
-			if(a[i] > a[i -1]) {
-				profit += a[i] - a[i - 1];
-			}
-		}
-		return profit;
-	}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

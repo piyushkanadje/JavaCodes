@@ -18,18 +18,6 @@ public class reverseArray {
 	
 	}
 	
-	static void rev(int[] a) {
-		int res = 0 ; 
-		for(int i = a.length - 1; i < a.length ; i --) {
-			int temp = a[i];
-			a[i] = a[res];
-			a[res] = temp;
-			res ++ ;
-		}
-		for(int  i = 0; i < a.length ; i++) {
-			System.out.print(a[i] + " ");
-		}
-	}
 
 ///ARRAY LIST <MOFIFIED SOLUTIOMN
 	static void reverseArray1(int[] a) {
@@ -39,10 +27,7 @@ public class reverseArray {
 			a[a.length - 1 - i] = temp;
 
 		}
-		System.out.println("Reversed Array  ");
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i] + " ");
-		}
+		
 	}
  
 	

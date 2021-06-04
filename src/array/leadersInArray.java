@@ -21,6 +21,9 @@ public class leadersInArray {
 			}
 		}
 	}
+	
+	
+
 
 	// using 1 iteration
 	static void leaderN(int[] a) {

@@ -14,7 +14,6 @@ public class leftByONE {
 		a[n - 1] = temp;
 
 	}
-	
 	// naive method to left rotate by d
 	static void leftD(int[] a, int d) {
 		for (int i = 0; i < d; i++) {
@@ -38,23 +37,7 @@ public class leftByONE {
 		}
 	}
 
- 
-	
-	static void leftDg(int[] a ,int d) {
-		int[] temp = new int[d];
-		int n = a.length;
-		for(int i = 0 ; i < d ; i++) {
-			temp[i] = a[i];
-		}
-		for(int i =d ; i <n ; i++ ) {
-			a[i-d] = a[i];
-		}
-		for(int i  = 0 ; i < d ; i ++) {
-			a[n - d + i  ] = temp[i];
-		}
-		
-	}
-	
+
 	//Left Rotate Integer Array List
     public static List<Integer> leftRotate(List<Integer> a , int d){
     	 
@@ -68,7 +51,7 @@ public class leftByONE {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = { 10, 20, 20, 30 };
-		leftDg(arr, 4);
+
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		a.add(10);
 		a.add(12);

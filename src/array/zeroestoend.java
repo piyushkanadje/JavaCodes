@@ -25,7 +25,7 @@ public class zeroestoend {
 
 	}
 
-	
+
 
 	// efficient solution
 
@@ -37,17 +37,15 @@ public class zeroestoend {
 				swap(a, i, count);
 				count++;
 			}
-
 		}
 	}
-
-	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] a = { 3, 4, 6, 67, 7, 0, 4, 5, 0, 0, 0 };
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
+
 		}
 
 	}

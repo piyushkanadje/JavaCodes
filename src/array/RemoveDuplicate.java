@@ -23,6 +23,10 @@ public class RemoveDuplicate {
 
 		return res;
 	}
+	
+	
+	
+	
 
 	// efficient method
 	static int removeDuplicate(int[] a) {
@@ -36,6 +40,8 @@ public class RemoveDuplicate {
 		}
 		return res;
 	}
+
+	
 
 	
 

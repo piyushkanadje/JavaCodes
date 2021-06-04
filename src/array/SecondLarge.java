@@ -30,6 +30,10 @@ public class SecondLarge {
 		return a[res];
 	}
 
+	
+
+	
+	
 	// finding ans in single traversal
 	static int sec(int[] a) {
 		int largest = 0;
@@ -45,7 +49,7 @@ public class SecondLarge {
 			}
 		}
 		return a[res];
-	}
+	} 
 
 	
 	
