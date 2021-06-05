@@ -11,7 +11,7 @@ public class StockBuySell {
 		for (int i = start; i < end; i++) {
 			for (int j = i + 1; j <= end; j++) {
 				if (a[j] > a[i]) {
-					int curr_profit = a[j] - a[i] + maxProfit(a, start, i - 1) + maxProfit(a, j + 1, end);
+		int curr_profit = a[j] - a[i] + maxProfit(a, start, i - 1) + maxProfit(a, j + 1, end);
 					profit = Math.max(profit, curr_profit);
 				}
 			}
@@ -19,7 +19,7 @@ public class StockBuySell {
 		return profit;
 	}
 
-	// Another solution to this problem
+	// Anoher solution to this problem
 	// here we do not make sell at low only sell at high
 
 	static int profit(int[] a) {
