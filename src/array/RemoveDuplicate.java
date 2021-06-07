@@ -23,27 +23,25 @@ public class RemoveDuplicate {
 
 		return res;
 	}
-	
-	
-	
+
 	
 
 	// efficient method
-	static int removeDuplicate(int[] a) {
-		int res = 1;
-		int n = a.length;
-		for (int i = 0; i < n; i++) {
-			if (a[i] != a[res - 1]) {
-				a[res] = a[i];
-				res++;
-			}
-		}
-		return res;
-	}
+	static int remDups1(int arr[], int n)
+    {
+    	int res = 1;
 
-	
+    	for(int i = 1; i < n; i++)
+    	{
+    		if(arr[res - 1] != arr[i])
+    		{
+    			arr[res] = arr[i];
+    			res++;
+    		}
+    	}
 
-	
+    	return res;
+    }
 
 	public static void main(String args[]) {
 //		int arr[] = { 10, 20, 20, 30, 30, 30 }, n = 6;

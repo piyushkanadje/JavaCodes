@@ -31,7 +31,7 @@ public class Insert {
 		int arr[] = new int[5], cap = 5, n = 3;
 		// ArrayList<Integer> al = new ArrayList<Integer>(cap);
 		arr[0] = 5;
-	   System.out.println(insert(arr,n,2,cap,1));
+	   System.out.println(insert( arr,n,2,cap,1));
 		
 
 //		al.add(20);

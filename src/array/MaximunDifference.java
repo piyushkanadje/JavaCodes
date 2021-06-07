@@ -13,6 +13,8 @@ public class MaximunDifference {
 		}
 		return res;
 	}
+	
+
 
 //solution taking O n as timecomplexity
 	static int maxD(int[] a) {
@@ -25,6 +27,7 @@ public class MaximunDifference {
 		}
 		return res;
 	}
+	
 	
 	
 	

@@ -19,11 +19,6 @@ public class Delete {
 
 		}
 		n = n - 1;
-
-		System.out.println("Elements after delete");
-		for (int k = 0; k < n; k++) {
-			System.out.print(arr[k] + " ");
-		}
 		return n;
 
 	}
