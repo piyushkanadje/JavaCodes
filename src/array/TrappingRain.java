@@ -44,12 +44,10 @@ public class TrappingRain {
 		return res;
 	}
 
-	
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = { 3, 0, 1, 2, 5 };
-	
+
 		System.out.println(n);
 	}
 
