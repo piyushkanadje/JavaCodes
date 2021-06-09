@@ -27,7 +27,7 @@ public class MaximunDifference {
 		}
 		return res;
 	}
-	
+				
 	
 	
 	
