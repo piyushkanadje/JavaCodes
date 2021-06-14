@@ -31,10 +31,30 @@ public class squarRoot {
 		return ans;
 	}
 
+	// effective practice
+	static double practice(int x) {
+		double ans = -1;
+		int low = 0;
+		int high = x;
+		while (low <= high) {
+			int mid = (low + high) / 2;
+			int msq =mid * mid;
+			if (msq == x) {
+				return mid;
+			} else if (msq > x) {
+				high = mid - 1;
+			} else {
+				ans = mid;
+				low = mid + 1;
+			}
+		}
+		return ans;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int x = 14;
-		int a = binarySquareRoot(x);
+		double a = practice(x);
 		System.out.println(a);
 	}
 
