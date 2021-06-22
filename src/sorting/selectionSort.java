@@ -20,6 +20,21 @@ public class selectionSort {
 
 	}
 
+	static void selectu(int[] arr) {
+		int n = arr.length;
+		for (int i = 0; i < n; i++) {
+			int min_val = i;
+			for (int j = 1; j < n; j++) {
+				if (arr[j] < arr[min_val]) {
+					min_val = j;
+				}
+			}
+			int temp = arr[i];
+			arr[i] = arr[min_val];
+			arr[min_val] = temp;
+		}
+	}
+
 	public static void selectionSorts(int[] a) {
 		int n = a.length;
 		for (int i = 0; i < n - 1; i++) {
