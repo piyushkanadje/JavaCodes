@@ -14,17 +14,7 @@ public class countDigit {
 		return count;
 	}
 
-	static int count(int n) {
-		if (n == 0) {
-			return 1;
-		}
-		int count = 0;
-		while (n > 0) {
-			n = n / 10;
-			count++;
-		}
-		return count;
-	}
+	//recursive function
   static int recusrsiveSol(int n) {
 	  if(n==0) {
 		  return 0;

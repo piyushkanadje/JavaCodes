@@ -27,8 +27,8 @@ public class Divisor {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// divisors(20);
-		divv(15);
+		divisors(20);
+	
 		// printDivisors(20);
 		// System.out.println(divisorO(25));
 		// System.out.println(divisorrs(12));
