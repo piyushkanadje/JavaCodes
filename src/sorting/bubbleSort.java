@@ -50,13 +50,29 @@ public class bubbleSort {
 
 	}
 
+	public static void bubbl(int[] a) {
+		int n = a.length;
+		for (int i = 0; i < n; i++) {
+			boolean swapper = false;
+			for (int j = 0; j < n - i - 1; j++) {
+				if (a[j] > a[j + 1]) {
+					int temp = a[j];
+					a[j] = a[j + 1];
+					a[j + 1] = temp;
+					swapper = true;
+				}
 
-	
+			}
+			if (swapper == true) {
+				break;
+			}
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int a[] = { 2, 1, 4, 3 };
-		bubbleSortOptimised(a);
+		bubbl(a);
 
 		for (int i = 0; i < 4; i++) {
 			System.out.print(a[i] + " ");
