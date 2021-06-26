@@ -45,27 +45,7 @@ public class mergeTwoSortedArray {
 
 	}
 
-	static void merges(int[] a, int[] b) {
-		int m = a.length;
-		int n = b.length;
-		int i = 0;
-		int j = 0;
-		while (i < m && j < n) {
-			if (a[i] <= b[j]) {
-				System.out.println(a[i]);
-				i++;
-			} else {
-				System.out.println(b[j]);
-				j++;
-			}
-		}
-		while (i < m) {
-			System.out.println(a[i++]);
-		}
-		while (j < n) {
-			System.out.println(b[j++]);
-		}
-	}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
