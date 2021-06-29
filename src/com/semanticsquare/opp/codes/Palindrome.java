@@ -1,4 +1,5 @@
 package com.semanticsquare.opp.codes;
+
 public class Palindrome {
 	// Reverse Of the number
 	static boolean palindromes(int n) {
@@ -13,32 +14,36 @@ public class Palindrome {
 		return (rev == n);
 	}
 
-	//String PAalimdrome
+	// String PAalimdrome
 	public static void rev(String str) {
-		String input =  str ;
+		String input = str;
 		StringBuilder input1 = new StringBuilder();
-		
-		
+
 		input1.append(input);
 		System.out.println(input1.reverse());
-		
-		System.out.println( input.equals( input1.reverse().toString()) ? "True" : "False"  );
-		
-	
-	}
-	
-	//Anagrams Of Strings
 
-	
+		System.out.println(input.equals(input1.reverse().toString()) ? "True" : "False");
+
+	}
+
+	public static void rec(String a) {
+		String i = a;
+		StringBuilder  input1 =  new StringBuilder() ;
+		input1.append(i);
+		System.out.println(input1.reverse());
+		System.out.println(i.equals(input1.reverse().toString()) ? "true" : "falase" );
+
+	}
+
+	// Anagrams Of Strings
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub4
-		
-		
+
 		String S = "madam";
 //		int sr = S.length();
 //		System.out.println(S.charAt(0));
-rev(S);
-		
+		rec(S);
 
 	}
 

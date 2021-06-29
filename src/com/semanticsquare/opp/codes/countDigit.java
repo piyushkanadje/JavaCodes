@@ -14,17 +14,27 @@ public class countDigit {
 		return count;
 	}
 
-	//recursive function
-  static int recusrsiveSol(int n) {
-	  if(n==0) {
-		  return 0;
-	  }
-	  return (1 + recusrsiveSol(n/10) );
-  }
+	// recursive function
+	static int recusrsiveSol(int n) {
+		if (n == 0) {
+			return 0;
+		}
+		return (1 + recusrsiveSol(n / 10));
+	}
+
+	static int count(int a) {
+		int c = 0;
+		while (a > 0) {
+			a = a / 10;
+			c++;
+		}
+		return c;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(recusrsiveSol (123));
+		System.out.println(count(123));
 	}
 
 }
