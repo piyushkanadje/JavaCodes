@@ -15,9 +15,8 @@ public class reverseArray {
 			low++;
 			high--;
 		}
-	
+
 	}
-	
 
 ///ARRAY LIST <MOFIFIED SOLUTIOMN
 	static void reverseArray1(int[] a) {
@@ -27,11 +26,17 @@ public class reverseArray {
 			a[a.length - 1 - i] = temp;
 
 		}
-		
+
 	}
- 
-	
-	 
+
+	static void reverses(int[] a) {
+		for (int i = 0; i < (a.length / 2); i++) {
+			int temp = a[i];
+			a[i] = a[a.length - 1 - i];
+			a[a.length - 1 - i] = temp;
+		}
+	}
+
 	/// ARRAY LIST SOLUTION HACKWERRANK
 	public static ArrayList<Integer> reverse(ArrayList<Integer> a) {
 
@@ -45,21 +50,21 @@ public class reverseArray {
 		return newArray;
 
 	}
-	
-	public static ArrayList<Integer> left(ArrayList<Integer> a , int d) {
-		
-		while(d!=0) {
+
+	public static ArrayList<Integer> left(ArrayList<Integer> a, int d) {
+
+		while (d != 0) {
 			a.add(a.get(0));
 			d--;
 		}
 		return a;
-		
+
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 20, 30, 5, 6, 8, 79, 12 };
 		rev(arr);
-		
 
 	}
 
